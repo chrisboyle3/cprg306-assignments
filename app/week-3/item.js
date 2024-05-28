@@ -5,9 +5,9 @@ const Item = ({ name, quantity, category }) => {
     <main className="flex w-1/4 justify-between items-center p-4 border rounded-lg bg-slate-600">
       <div>
         <h2 className="text-lg font-semibold">{name}</h2>
-        <p className="text-sm text-yellow-600">{category}</p>
+        <p className="text-sm text-yellow-600">Buy {quantity} in {category}</p>
       </div>
-      <span className="text-lg font-bold">{quantity}</span>
+      <span className="text-lg font-bold"></span>
     </main>
   );
 };
