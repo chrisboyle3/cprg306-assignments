@@ -131,7 +131,7 @@ const quantityStyle = {
 };
 
 const selectStyle = {
-  width: '300px',
+  width: '200px',
   padding: '10px',
   margin: '10px 0',
   fontSize: '16px',
