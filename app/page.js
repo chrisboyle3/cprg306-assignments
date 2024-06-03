@@ -4,6 +4,7 @@ import Link from 'next/link';
 export default function Home() {
     const weekTwo = "http://localhost:3000/week-2";
     const weekThree = "http://localhost:3000/week-3";
+    const weekFour = "http://localhost:3000/week-4";
 
     return (
       <main>
@@ -15,6 +16,9 @@ export default function Home() {
         </div>
         <div className="text-lg mx-5">
         <Link href={weekThree}>Week-3</Link>
+        </div>
+        <div className="text-lg mx-5">
+        <Link href={weekFour}>Week-4</Link>
         </div>
       </main>
     );
