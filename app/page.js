@@ -6,6 +6,7 @@ export default function Home() {
     const weekTwo = "http://localhost:3000/week-2";
     const weekThree = "http://localhost:3000/week-3";
     const weekFour = "http://localhost:3000/week-4";
+    const weekFive = "http://localhost:3000/week-5";
 
     return (
       <main>
@@ -21,6 +22,9 @@ export default function Home() {
           </div>
           <div className="text-lg mx-5">
           <Link href={weekFour}>Week-4</Link>
+          </div>
+          <div className="text-lg mx-5">
+          <Link href={weekFive}>Week-5</Link>
           </div>
         </div>
       </main>
