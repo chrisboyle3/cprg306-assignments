@@ -8,7 +8,7 @@ const Item = ({ name, quantity, category }) => {
             <li>Buy {quantity} in {category} </li>   
         </ul>
     </div>
-  );
-};
+  )
+}
 
 export default Item;

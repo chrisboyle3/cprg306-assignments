@@ -41,20 +41,21 @@ const ItemList = () => {
     return (
       <div>
         <div className="mb-4">
+        <label className="font-bold">Sort by:</label>
           <button 
             onClick={() => setSortBy('name')} 
-            className={`px-4 py-2 mr-2 ${sortBy === 'name' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}>
-            Sort by Name
+            className={`bg-${sortBy === "name" ? "[#465eca]" : "[black]"} p-3 m-2 w-28 rounded-xl text-white`}>
+            Name
           </button>
           <button 
             onClick={() => setSortBy('category')} 
-            className={`px-4 py-2 ${sortBy === 'category' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}>
-            Sort by Category
+            className={`bg-${sortBy === "category" ? "[#465eca]" : "[black]"} p-3 m-2 w-28 rounded-xl text-white`}>
+            Category
           </button>
           <button 
             onClick={() => setSortBy('group')} 
-            className={`px-4 py-2 ml-2 ${sortBy === 'group' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}>
-            Group by Category
+            className={`bg-${sortBy === "group" ? "[#465eca]" : "[black]"} p-1 m-2 w-28 rounded-xl text-white`}>
+            Grouped Category
           </button>
         </div>
         {sortBy === 'group' ? (

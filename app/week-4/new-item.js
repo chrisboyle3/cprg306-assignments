@@ -1,42 +1,26 @@
-'use client';
-import React from 'react';
-import { useState } from 'react';
+"use client"
+
+import React, { useState } from 'react';
 
 const NewItem = () => {
 
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [category, setCategory] = useState("produce");
+  const [category, setCategory] = useState("produce")
 
-const handleSubmit = (event) => {
-  event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const item = {
-    name,
-    quantity,
-    category
+    const item = { name, quantity, category };
+
+    console.log(item)
+
+    alert(`Added item: ${name} \nQuantity: ${quantity} \nCategory: ${category}`);
+
+    setName("");
+    setQuantity(1);
+    setCategory("produce");
   };
-
-  console.log(item);
-
-  alert('Item added:\nName: ${name}\nQuantity: ${quantity}\nCategory: ${category}');
-
-  setName("");
-  setQuantity(1);
-  setCategory("produce");
-};
-
-const handleNameChange = (event) => {
-  setName(event.target.value);
-};
-
-const handleQuantityChange = (event) => {
-  setQuantity(Number(event.target.value));
-};
-
-const handleCategoryChange = (event) => {
-  setCategory(event.target.value);
-};
 
   return (
     <div style={(formStyle)}>      
@@ -49,7 +33,7 @@ const handleCategoryChange = (event) => {
             name="itemName"
             placeholder='Item Name'
             value={name}
-            onChange={handleNameChange}
+            onChange={(e)=> setName(e.target.value)}
             required
             style={inputStyle}
           />
@@ -62,7 +46,7 @@ const handleCategoryChange = (event) => {
               id="itemQuantity"
               name="itemQuantity"            
               value={quantity}
-              onChange={handleQuantityChange}
+              onChange={(e)=> setQuantity(e.target.value)}
               min="1"
               max="99"
               required
@@ -75,7 +59,7 @@ const handleCategoryChange = (event) => {
               id="itemCategory"
               name="itemCategory"
               value={category}
-              onChange={handleCategoryChange}
+              onChange={(e)=> setCategory(e.target.value)}
               required
               style={selectStyle}
             >
