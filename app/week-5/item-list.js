@@ -40,17 +40,16 @@ const ItemList = () => {
   
     return (
       <div>
-        <div className="mb-4">
-        <label className="font-bold">Sort by:</label>
+        <div className="mb-4">        
           <button 
             onClick={() => setSortBy('name')} 
             className={`bg-${sortBy === "name" ? "[#465eca]" : "[black]"} p-3 m-2 w-28 rounded-xl text-white`}>
-            Name
+            Sort by Name
           </button>
           <button 
             onClick={() => setSortBy('category')} 
             className={`bg-${sortBy === "category" ? "[#465eca]" : "[black]"} p-3 m-2 w-28 rounded-xl text-white`}>
-            Category
+            Sort by Category
           </button>
           <button 
             onClick={() => setSortBy('group')} 

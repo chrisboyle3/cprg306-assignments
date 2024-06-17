@@ -1,5 +1,6 @@
 import React from 'react';
 import StudentInfo from './student-info';
+import Link from 'next/link';
 
 
 export default function Page() {
@@ -7,6 +8,7 @@ export default function Page() {
     <main>
       <h1>Shopping List</h1>
       <StudentInfo></StudentInfo>
+      <Link href="/">Back</Link>
     </main>    
   );
 }

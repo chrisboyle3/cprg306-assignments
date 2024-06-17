@@ -8,7 +8,7 @@ const Page = () => {
     return (
       <div>
         <NewItem />
-        <Link href="/">&lt;Back</Link>
+        <Link href="/">Back</Link>
       </div>
       
     );

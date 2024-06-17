@@ -11,10 +11,12 @@ const ItemList = ({ items }) => {
 
     if (sortBy === "name") {
       return sortedItems.sort((a, b) => a.name.localeCompare(b.name));
+      
     } else if (sortBy === "category") {
       return sortedItems.sort((a, b) => a.category.localeCompare(b.category));
-    } else if (sortBy === "title_category") {
-      const sortedByCategory = sortedItems.sort((a, b) => a.category.localeCompare(b.category));
+
+    } else if (sortBy === "group") {
+      const sortedByCategory = sortedItems.sort((a, b) => a.category.localeCompare(b.category));      
       const groupedByCategory = [];
       let currentCategory = null;
 
@@ -39,25 +41,24 @@ const ItemList = ({ items }) => {
 
   return (
     <main>
-      <div className="flex mt-3 items-center">
-        <label className="font-bold">Sort by:</label>
+      <div className="flex mt-3 ">        
         <button 
           className={`bg-${sortBy === "name" ? "[#465eca]" : "[black]"} p-3 m-2 w-28 rounded-xl text-white`} 
           onClick={() => handleSortChange("name")}>
-          Name
+          Sort by Name
         </button>
         <button 
           className={`bg-${sortBy === "category" ? "[#465eca]" : "[black]"} p-3 m-2 w-28 rounded-xl text-white`} 
           onClick={() => handleSortChange("category")}>
-          Category
+          Sort by Category
         </button>
         <button 
-          className={`bg-${sortBy === "title_category" ? "[#465eca]" : "[black]"} p-1 m-2 w-28 rounded-xl text-white`} 
-          onClick={() => handleSortChange("title_category")}>
+          className={`bg-${sortBy === "group" ? "[#465eca]" : "[black]"} p-1 m-2 w-28 rounded-xl text-white`} 
+          onClick={() => handleSortChange("group")}>
           Grouped Category
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center">
         {sortedItems.map((item) => (
           <React.Fragment key={item.id || item.category}>
             {item.isCategoryTitle ? (

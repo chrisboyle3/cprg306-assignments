@@ -18,8 +18,8 @@ const Page = () => {
 
 
   return (
-    <main className="flex flex-col min-h-screen items-center p-10 font-arial">
-        <div className="flex items-center">
+    <main className="flex flex-col min-h-screen p-10 font-arial">
+        <div className="flex">
             <h1 className="text-[40px] font-bold mr-10 mb-3">Shopping List</h1>
             
         </div>
