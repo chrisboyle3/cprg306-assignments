@@ -8,6 +8,7 @@ export default function Home() {
     const weekFour = "http://localhost:3000/week-4";
     const weekFive = "http://localhost:3000/week-5";
     const weekSix = "http://localhost:3000/week-6";
+    const weekSeven = "http://localhost:3000/week-7";
 
     return (
       <main className="min-h-screen bg-black-100 flex flex-col items-center">
@@ -39,6 +40,11 @@ export default function Home() {
                     <Link href={weekSix}>
                         <div className="block p-4 bg-blue-600 text-white text-lg rounded-lg text-center transition duration-300 ease-in-out hover:bg-blue-700">
                             Week-6
+                        </div>
+                    </Link>
+                    <Link href={weekSeven}>
+                        <div className="block p-4 bg-blue-600 text-white text-lg rounded-lg text-center transition duration-300 ease-in-out hover:bg-blue-700">
+                            Week-7
                         </div>
                     </Link>
                 </div>
