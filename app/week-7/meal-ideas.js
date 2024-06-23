@@ -45,7 +45,7 @@ const MealIdeas = ({ ingredient }) => {
                 <h2 className="mb-2">Here are some meal ideas using {ingredient}</h2>
                 <ul>
                   {meals.map((meal) => (
-                    <li key={meal.idMeal} className="bg-[#e6f04e] p-2 mb-3 rounded-l hover-bg-amber-200 cursor-pointer text-black font-bold">
+                    <li key={meal.idMeal} className="bg-[#f0b74e] p-2 mb-3 rounded-l hover-bg-amber-200 cursor-pointer text-black font-bold">
                       {meal.strMeal}
                     </li>
                   ))}
