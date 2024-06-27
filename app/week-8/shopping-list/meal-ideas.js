@@ -44,9 +44,8 @@ const MealIdeas = ({ ingredient }) => {
               <div>
                 <h2 className="mb-2">Here are some meal ideas using {ingredient}</h2>
                 <ul>
-                  {meals.map((meal) => (                    
-                    <li key={meal.idMeal} className="bg-[#f0b74e] p-2 mb-3 rounded-l hover-bg-amber-200 cursor-pointer text-black font-bold flex">
-                      <img src={meal.strMealThumb} alt={meal.strMeal} className='w-16 h-16 mr-2'/>
+                  {meals.map((meal) => (
+                    <li key={meal.idMeal} className="bg-[#f0b74e] p-2 mb-3 rounded-l hover-bg-amber-200 cursor-pointer text-black font-bold">
                       {meal.strMeal}
                     </li>
                   ))}

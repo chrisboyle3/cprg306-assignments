@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 
 export default function Home() {
-    const weekTwo = "http://localhost:3000/week-2";
-    const weekThree = "http://localhost:3000/week-3";
-    const weekFour = "http://localhost:3000/week-4";
-    const weekFive = "http://localhost:3000/week-5";
-    const weekSix = "http://localhost:3000/week-6";
-    const weekSeven = "http://localhost:3000/week-7";
-    const weekEight = "http://localhost:3000/week-8";
+    const weekTwo = "/week-2";
+    const weekThree = "/week-3";
+    const weekFour = "/week-4";
+    const weekFive = "/week-5";
+    const weekSix = "/week-6";
+    const weekSeven = "/week-7";
+    const weekEight = "/week-8";
 
     return (
       <main className="min-h-screen bg-black-100 flex flex-col items-center">
